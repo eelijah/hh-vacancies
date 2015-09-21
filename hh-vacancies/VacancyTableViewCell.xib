@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="VacancyTableViewCell" id="iN0-l3-epB" customClass="VacancyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="557" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="259" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="ete-Ng-rU6">
+                    <rect key="frame" x="449" y="8" width="100" height="98"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="NR4-27-wUX"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" priority="750" constant="100" id="iAh-IE-56d"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="iAh-IE-56d"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-2C-5Xk">
+                    <rect key="frame" x="8" y="8" width="433" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-0t-IFK">
+                    <rect key="frame" x="8" y="36" width="433" height="41.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZl-tP-pAz">
+                    <rect key="frame" x="8" y="85.5" width="433" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Aba-0t-IFK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="7Ie-AI-LgF"/>
+                <constraint firstItem="y4e-2C-5Xk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="97A-No-vsD"/>
+                <constraint firstItem="y4e-2C-5Xk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="L3z-qO-awj"/>
+                <constraint firstItem="Aba-0t-IFK" firstAttribute="top" secondItem="y4e-2C-5Xk" secondAttribute="bottom" constant="8" id="Nyv-gE-Zzh"/>
+                <constraint firstItem="ete-Ng-rU6" firstAttribute="leading" secondItem="y4e-2C-5Xk" secondAttribute="trailing" constant="8" id="OKY-Rh-bGC"/>
+                <constraint firstItem="TZl-tP-pAz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="PkC-4t-bEb"/>
+                <constraint firstItem="ete-Ng-rU6" firstAttribute="leading" secondItem="TZl-tP-pAz" secondAttribute="trailing" constant="8" id="SU2-Ea-xmK"/>
+                <constraint firstAttribute="bottom" secondItem="ete-Ng-rU6" secondAttribute="bottom" constant="8" id="SZp-Z0-0PD"/>
+                <constraint firstAttribute="bottom" secondItem="TZl-tP-pAz" secondAttribute="bottom" constant="8" id="Vfg-PD-Wzu"/>
+                <constraint firstAttribute="trailing" secondItem="ete-Ng-rU6" secondAttribute="trailing" constant="8" id="Vsn-Fd-DkB"/>
+                <constraint firstItem="ete-Ng-rU6" firstAttribute="leading" secondItem="Aba-0t-IFK" secondAttribute="trailing" constant="8" id="dU1-SP-lPI"/>
+                <constraint firstItem="ete-Ng-rU6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="hJh-om-5pR"/>
+                <constraint firstItem="TZl-tP-pAz" firstAttribute="top" secondItem="Aba-0t-IFK" secondAttribute="bottom" constant="8" id="mBf-5K-STo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="employerLogo" destination="ete-Ng-rU6" id="FHO-ij-ezp"/>
+                <outlet property="employerName" destination="Aba-0t-IFK" id="XE3-Ar-QxP"/>
+                <outlet property="name" destination="y4e-2C-5Xk" id="TTR-7g-A31"/>
+                <outlet property="salary" destination="TZl-tP-pAz" id="4aN-vQ-tOV"/>
+            </connections>
+            <point key="canvasLocation" x="351.5" y="202"/>
+        </view>
+    </objects>
+</document>

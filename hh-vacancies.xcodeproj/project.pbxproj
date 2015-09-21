@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF4FA2361BAED23F00116A4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2351BAED23F00116A4C /* main.m */; };
+		CF4FA2391BAED23F00116A4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2381BAED23F00116A4C /* AppDelegate.m */; };
+		CF4FA2411BAED23F00116A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4FA2401BAED23F00116A4C /* Assets.xcassets */; };
+		CF4FA2441BAED23F00116A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4FA2421BAED23F00116A4C /* LaunchScreen.storyboard */; };
+		CF4FA24F1BAED23F00116A4C /* hh_vacanciesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA24E1BAED23F00116A4C /* hh_vacanciesTests.m */; };
+		CF4FA25A1BAED24000116A4C /* hh_vacanciesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2591BAED24000116A4C /* hh_vacanciesUITests.m */; };
+		CF4FA26C1BAEDAFF00116A4C /* ServiceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA26B1BAEDAFF00116A4C /* ServiceLayer.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA26F1BAEDB1100116A4C /* ApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA26E1BAEDB1100116A4C /* ApiService.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA2751BAEE03C00116A4C /* UpdateService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2741BAEE03C00116A4C /* UpdateService.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA27B1BAEFD1700116A4C /* ParserService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA27A1BAEFD1700116A4C /* ParserService.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA2801BAF000A00116A4C /* VacanciesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA27F1BAF000A00116A4C /* VacanciesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA2831BAF001C00116A4C /* VacancyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2821BAF001C00116A4C /* VacancyTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA2871BAF367100116A4C /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2861BAF367100116A4C /* TableViewDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA28A1BAF3DC100116A4C /* Vacancy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2891BAF3DC100116A4C /* Vacancy.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA28D1BAF4B1E00116A4C /* VacanciesRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA28C1BAF4B1E00116A4C /* VacanciesRepository.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA2921BAF59EF00116A4C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2911BAF59EF00116A4C /* Constants.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA2961BAF62E300116A4C /* VacancyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4FA2951BAF62E300116A4C /* VacancyTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		CF4FA2991BAFBB5C00116A4C /* Employer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA2981BAFBB5C00116A4C /* Employer.m */; settings = {ASSET_TAGS = (); }; };
+		CF4FA29C1BAFC09F00116A4C /* ImageDownloaderService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4FA29B1BAFC09F00116A4C /* ImageDownloaderService.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF4FA24B1BAED23F00116A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4FA2291BAED23F00116A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4FA2301BAED23F00116A4C;
+			remoteInfo = "hh-vacancies";
+		};
+		CF4FA2561BAED24000116A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4FA2291BAED23F00116A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4FA2301BAED23F00116A4C;
+			remoteInfo = "hh-vacancies";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF4FA2311BAED23F00116A4C /* hh-vacancies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hh-vacancies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4FA2351BAED23F00116A4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF4FA2371BAED23F00116A4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF4FA2381BAED23F00116A4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF4FA2401BAED23F00116A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF4FA2431BAED23F00116A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF4FA2451BAED23F00116A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4FA24A1BAED23F00116A4C /* hh-vacanciesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hh-vacanciesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4FA24E1BAED23F00116A4C /* hh_vacanciesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hh_vacanciesTests.m; sourceTree = "<group>"; };
+		CF4FA2501BAED23F00116A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4FA2551BAED24000116A4C /* hh-vacanciesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hh-vacanciesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4FA2591BAED24000116A4C /* hh_vacanciesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hh_vacanciesUITests.m; sourceTree = "<group>"; };
+		CF4FA25B1BAED24000116A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4FA26A1BAEDAFF00116A4C /* ServiceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceLayer.h; sourceTree = "<group>"; };
+		CF4FA26B1BAEDAFF00116A4C /* ServiceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceLayer.m; sourceTree = "<group>"; };
+		CF4FA26D1BAEDB1100116A4C /* ApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiService.h; sourceTree = "<group>"; };
+		CF4FA26E1BAEDB1100116A4C /* ApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiService.m; sourceTree = "<group>"; };
+		CF4FA2731BAEE03C00116A4C /* UpdateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateService.h; sourceTree = "<group>"; };
+		CF4FA2741BAEE03C00116A4C /* UpdateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateService.m; sourceTree = "<group>"; };
+		CF4FA2791BAEFD1700116A4C /* ParserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserService.h; sourceTree = "<group>"; };
+		CF4FA27A1BAEFD1700116A4C /* ParserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserService.m; sourceTree = "<group>"; };
+		CF4FA27E1BAF000A00116A4C /* VacanciesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VacanciesTableViewController.h; sourceTree = "<group>"; };
+		CF4FA27F1BAF000A00116A4C /* VacanciesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VacanciesTableViewController.m; sourceTree = "<group>"; };
+		CF4FA2811BAF001C00116A4C /* VacancyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VacancyTableViewCell.h; sourceTree = "<group>"; };
+		CF4FA2821BAF001C00116A4C /* VacancyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VacancyTableViewCell.m; sourceTree = "<group>"; };
+		CF4FA2851BAF367100116A4C /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		CF4FA2861BAF367100116A4C /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		CF4FA2881BAF3DC100116A4C /* Vacancy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vacancy.h; sourceTree = "<group>"; };
+		CF4FA2891BAF3DC100116A4C /* Vacancy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vacancy.m; sourceTree = "<group>"; };
+		CF4FA28B1BAF4B1E00116A4C /* VacanciesRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VacanciesRepository.h; sourceTree = "<group>"; };
+		CF4FA28C1BAF4B1E00116A4C /* VacanciesRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VacanciesRepository.m; sourceTree = "<group>"; };
+		CF4FA2901BAF59EF00116A4C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CF4FA2911BAF59EF00116A4C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		CF4FA2951BAF62E300116A4C /* VacancyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VacancyTableViewCell.xib; sourceTree = "<group>"; };
+		CF4FA2971BAFBB5C00116A4C /* Employer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employer.h; sourceTree = "<group>"; };
+		CF4FA2981BAFBB5C00116A4C /* Employer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employer.m; sourceTree = "<group>"; };
+		CF4FA29A1BAFC09F00116A4C /* ImageDownloaderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloaderService.h; sourceTree = "<group>"; };
+		CF4FA29B1BAFC09F00116A4C /* ImageDownloaderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloaderService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF4FA22E1BAED23F00116A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4FA2471BAED23F00116A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4FA2521BAED24000116A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF4FA2281BAED23F00116A4C = {
+			isa = PBXGroup;
+			children = (
+				CF4FA2331BAED23F00116A4C /* hh-vacancies */,
+				CF4FA24D1BAED23F00116A4C /* hh-vacanciesTests */,
+				CF4FA2581BAED24000116A4C /* hh-vacanciesUITests */,
+				CF4FA2321BAED23F00116A4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF4FA2321BAED23F00116A4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA2311BAED23F00116A4C /* hh-vacancies.app */,
+				CF4FA24A1BAED23F00116A4C /* hh-vacanciesTests.xctest */,
+				CF4FA2551BAED24000116A4C /* hh-vacanciesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF4FA2331BAED23F00116A4C /* hh-vacancies */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA2371BAED23F00116A4C /* AppDelegate.h */,
+				CF4FA2381BAED23F00116A4C /* AppDelegate.m */,
+				CF4FA2901BAF59EF00116A4C /* Constants.h */,
+				CF4FA2911BAF59EF00116A4C /* Constants.m */,
+				CF4FA29E1BAFCAC500116A4C /* Repositories */,
+				CF4FA2841BAF002000116A4C /* ViewControllers */,
+				CF4FA27D1BAEFDC400116A4C /* Model */,
+				CF4FA27C1BAEFDBA00116A4C /* Services */,
+				CF4FA2401BAED23F00116A4C /* Assets.xcassets */,
+				CF4FA2421BAED23F00116A4C /* LaunchScreen.storyboard */,
+				CF4FA2451BAED23F00116A4C /* Info.plist */,
+				CF4FA2341BAED23F00116A4C /* Supporting Files */,
+			);
+			path = "hh-vacancies";
+			sourceTree = "<group>";
+		};
+		CF4FA2341BAED23F00116A4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA2351BAED23F00116A4C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF4FA24D1BAED23F00116A4C /* hh-vacanciesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA24E1BAED23F00116A4C /* hh_vacanciesTests.m */,
+				CF4FA2501BAED23F00116A4C /* Info.plist */,
+			);
+			path = "hh-vacanciesTests";
+			sourceTree = "<group>";
+		};
+		CF4FA2581BAED24000116A4C /* hh-vacanciesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA2591BAED24000116A4C /* hh_vacanciesUITests.m */,
+				CF4FA25B1BAED24000116A4C /* Info.plist */,
+			);
+			path = "hh-vacanciesUITests";
+			sourceTree = "<group>";
+		};
+		CF4FA27C1BAEFDBA00116A4C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA26A1BAEDAFF00116A4C /* ServiceLayer.h */,
+				CF4FA26B1BAEDAFF00116A4C /* ServiceLayer.m */,
+				CF4FA26D1BAEDB1100116A4C /* ApiService.h */,
+				CF4FA26E1BAEDB1100116A4C /* ApiService.m */,
+				CF4FA29A1BAFC09F00116A4C /* ImageDownloaderService.h */,
+				CF4FA29B1BAFC09F00116A4C /* ImageDownloaderService.m */,
+				CF4FA2731BAEE03C00116A4C /* UpdateService.h */,
+				CF4FA2741BAEE03C00116A4C /* UpdateService.m */,
+				CF4FA2791BAEFD1700116A4C /* ParserService.h */,
+				CF4FA27A1BAEFD1700116A4C /* ParserService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		CF4FA27D1BAEFDC400116A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA2881BAF3DC100116A4C /* Vacancy.h */,
+				CF4FA2891BAF3DC100116A4C /* Vacancy.m */,
+				CF4FA2971BAFBB5C00116A4C /* Employer.h */,
+				CF4FA2981BAFBB5C00116A4C /* Employer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF4FA2841BAF002000116A4C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA29D1BAFCA8D00116A4C /* DataSource */,
+				CF4FA27E1BAF000A00116A4C /* VacanciesTableViewController.h */,
+				CF4FA27F1BAF000A00116A4C /* VacanciesTableViewController.m */,
+				CF4FA2811BAF001C00116A4C /* VacancyTableViewCell.h */,
+				CF4FA2821BAF001C00116A4C /* VacancyTableViewCell.m */,
+				CF4FA2951BAF62E300116A4C /* VacancyTableViewCell.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF4FA29D1BAFCA8D00116A4C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA2851BAF367100116A4C /* TableViewDataSource.h */,
+				CF4FA2861BAF367100116A4C /* TableViewDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		CF4FA29E1BAFCAC500116A4C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FA28B1BAF4B1E00116A4C /* VacanciesRepository.h */,
+				CF4FA28C1BAF4B1E00116A4C /* VacanciesRepository.m */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF4FA2301BAED23F00116A4C /* hh-vacancies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4FA25E1BAED24000116A4C /* Build configuration list for PBXNativeTarget "hh-vacancies" */;
+			buildPhases = (
+				CF4FA22D1BAED23F00116A4C /* Sources */,
+				CF4FA22E1BAED23F00116A4C /* Frameworks */,
+				CF4FA22F1BAED23F00116A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hh-vacancies";
+			productName = "hh-vacancies";
+			productReference = CF4FA2311BAED23F00116A4C /* hh-vacancies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF4FA2491BAED23F00116A4C /* hh-vacanciesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4FA2611BAED24000116A4C /* Build configuration list for PBXNativeTarget "hh-vacanciesTests" */;
+			buildPhases = (
+				CF4FA2461BAED23F00116A4C /* Sources */,
+				CF4FA2471BAED23F00116A4C /* Frameworks */,
+				CF4FA2481BAED23F00116A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF4FA24C1BAED23F00116A4C /* PBXTargetDependency */,
+			);
+			name = "hh-vacanciesTests";
+			productName = "hh-vacanciesTests";
+			productReference = CF4FA24A1BAED23F00116A4C /* hh-vacanciesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF4FA2541BAED24000116A4C /* hh-vacanciesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4FA2641BAED24000116A4C /* Build configuration list for PBXNativeTarget "hh-vacanciesUITests" */;
+			buildPhases = (
+				CF4FA2511BAED24000116A4C /* Sources */,
+				CF4FA2521BAED24000116A4C /* Frameworks */,
+				CF4FA2531BAED24000116A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF4FA2571BAED24000116A4C /* PBXTargetDependency */,
+			);
+			name = "hh-vacanciesUITests";
+			productName = "hh-vacanciesUITests";
+			productReference = CF4FA2551BAED24000116A4C /* hh-vacanciesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF4FA2291BAED23F00116A4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Elijah Ponkratenko";
+				TargetAttributes = {
+					CF4FA2301BAED23F00116A4C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CF4FA2491BAED23F00116A4C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CF4FA2301BAED23F00116A4C;
+					};
+					CF4FA2541BAED24000116A4C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CF4FA2301BAED23F00116A4C;
+					};
+				};
+			};
+			buildConfigurationList = CF4FA22C1BAED23F00116A4C /* Build configuration list for PBXProject "hh-vacancies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF4FA2281BAED23F00116A4C;
+			productRefGroup = CF4FA2321BAED23F00116A4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF4FA2301BAED23F00116A4C /* hh-vacancies */,
+				CF4FA2491BAED23F00116A4C /* hh-vacanciesTests */,
+				CF4FA2541BAED24000116A4C /* hh-vacanciesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF4FA22F1BAED23F00116A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4FA2961BAF62E300116A4C /* VacancyTableViewCell.xib in Resources */,
+				CF4FA2441BAED23F00116A4C /* LaunchScreen.storyboard in Resources */,
+				CF4FA2411BAED23F00116A4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4FA2481BAED23F00116A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4FA2531BAED24000116A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF4FA22D1BAED23F00116A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4FA28D1BAF4B1E00116A4C /* VacanciesRepository.m in Sources */,
+				CF4FA27B1BAEFD1700116A4C /* ParserService.m in Sources */,
+				CF4FA28A1BAF3DC100116A4C /* Vacancy.m in Sources */,
+				CF4FA2991BAFBB5C00116A4C /* Employer.m in Sources */,
+				CF4FA29C1BAFC09F00116A4C /* ImageDownloaderService.m in Sources */,
+				CF4FA2831BAF001C00116A4C /* VacancyTableViewCell.m in Sources */,
+				CF4FA26F1BAEDB1100116A4C /* ApiService.m in Sources */,
+				CF4FA26C1BAEDAFF00116A4C /* ServiceLayer.m in Sources */,
+				CF4FA2871BAF367100116A4C /* TableViewDataSource.m in Sources */,
+				CF4FA2391BAED23F00116A4C /* AppDelegate.m in Sources */,
+				CF4FA2801BAF000A00116A4C /* VacanciesTableViewController.m in Sources */,
+				CF4FA2751BAEE03C00116A4C /* UpdateService.m in Sources */,
+				CF4FA2361BAED23F00116A4C /* main.m in Sources */,
+				CF4FA2921BAF59EF00116A4C /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4FA2461BAED23F00116A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4FA24F1BAED23F00116A4C /* hh_vacanciesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4FA2511BAED24000116A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4FA25A1BAED24000116A4C /* hh_vacanciesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF4FA24C1BAED23F00116A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4FA2301BAED23F00116A4C /* hh-vacancies */;
+			targetProxy = CF4FA24B1BAED23F00116A4C /* PBXContainerItemProxy */;
+		};
+		CF4FA2571BAED24000116A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4FA2301BAED23F00116A4C /* hh-vacancies */;
+			targetProxy = CF4FA2561BAED24000116A4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF4FA2421BAED23F00116A4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4FA2431BAED23F00116A4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF4FA25C1BAED24000116A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF4FA25D1BAED24000116A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF4FA25F1BAED24000116A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "hh-vacancies/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.elijahponkratenko.test.hh-vacancies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF4FA2601BAED24000116A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "hh-vacancies/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.elijahponkratenko.test.hh-vacancies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF4FA2621BAED24000116A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "hh-vacanciesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.elijahponkratenko.test.hh-vacanciesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hh-vacancies.app/hh-vacancies";
+			};
+			name = Debug;
+		};
+		CF4FA2631BAED24000116A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "hh-vacanciesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.elijahponkratenko.test.hh-vacanciesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hh-vacancies.app/hh-vacancies";
+			};
+			name = Release;
+		};
+		CF4FA2651BAED24000116A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "hh-vacanciesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.elijahponkratenko.test.hh-vacanciesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "hh-vacancies";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CF4FA2661BAED24000116A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "hh-vacanciesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.elijahponkratenko.test.hh-vacanciesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "hh-vacancies";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF4FA22C1BAED23F00116A4C /* Build configuration list for PBXProject "hh-vacancies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4FA25C1BAED24000116A4C /* Debug */,
+				CF4FA25D1BAED24000116A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4FA25E1BAED24000116A4C /* Build configuration list for PBXNativeTarget "hh-vacancies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4FA25F1BAED24000116A4C /* Debug */,
+				CF4FA2601BAED24000116A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF4FA2611BAED24000116A4C /* Build configuration list for PBXNativeTarget "hh-vacanciesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4FA2621BAED24000116A4C /* Debug */,
+				CF4FA2631BAED24000116A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF4FA2641BAED24000116A4C /* Build configuration list for PBXNativeTarget "hh-vacanciesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4FA2651BAED24000116A4C /* Debug */,
+				CF4FA2661BAED24000116A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF4FA2291BAED23F00116A4C /* Project object */;
+}

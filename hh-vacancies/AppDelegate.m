@@ -7,16 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "ServiceLayer.h"
+#import "VacanciesTableViewController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) VacanciesTableViewController *tableViewController;
+@property (nonatomic, strong) UINavigationController *navigationController;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Init Service layer as spine of all system
+    [ServiceLayer sharedServiceLayer];
+    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    UIWindow *window = [[UIWindow alloc]initWithFrame:screenBounds];
+    self.tableViewController = [[VacanciesTableViewController alloc]initWithStyle:UITableViewStylePlain];
+    self.navigationController = [[UINavigationController alloc]initWithRootViewController:self.tableViewController];
+    [window setRootViewController:self.navigationController];
+    [window makeKeyAndVisible];
+    [self setWindow:window];
+    
     return YES;
 }
 
