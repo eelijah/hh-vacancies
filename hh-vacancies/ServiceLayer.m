@@ -19,6 +19,9 @@
 @property (nonatomic, strong) ParserService *parserService;
 @property (nonatomic, strong) VacanciesRepository *vacanciesRepository;
 @property (nonatomic, strong) ImageDownloaderService *imageService;
+
+@property (nonatomic, strong) NSMutableArray *networkUpdateListners;
+
 @end
 
 @implementation ServiceLayer
@@ -41,6 +44,8 @@
 }
 
 - (void)bootstrapServices {
+    _networkUpdateListners = [NSMutableArray new];
+    
     _apiService = [[ApiService alloc]init];
     
     _imageService = [[ImageDownloaderService alloc]initWithApiService:_apiService];
@@ -53,6 +58,22 @@
     
     [_updateService preloadData];
     
+}
+
+- (void)addNetworkUpdateListner:(id<NetworkUpdateProtocol>)listner
+{
+    [self.networkUpdateListners addObject:listner];
+}
+
+- (void)removeNetworkUpdateListner:(id<NetworkUpdateProtocol>)listner
+{
+    [self.networkUpdateListners removeObject:listner];
+}
+
+- (void)notifyNetworkUpdateListners {
+    for (id<NetworkUpdateProtocol> listner in self.networkUpdateListners) {
+        [listner networkUpdate];
+    }
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetworkUpdateProtocol.h"
 @class ApiService;
 @class UpdateService;
 @class ParserService;
@@ -21,5 +22,9 @@
 @property (nonatomic, strong, readonly) ImageDownloaderService *imageService;
 
 + (id)sharedServiceLayer;
+
+- (void)notifyNetworkUpdateListners;
+- (void)addNetworkUpdateListner:(id<NetworkUpdateProtocol>)listner;
+- (void)removeNetworkUpdateListner:(id<NetworkUpdateProtocol>)listner;
 
 @end

@@ -84,6 +84,7 @@
 		CF4FA2981BAFBB5C00116A4C /* Employer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employer.m; sourceTree = "<group>"; };
 		CF4FA29A1BAFC09F00116A4C /* ImageDownloaderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloaderService.h; sourceTree = "<group>"; };
 		CF4FA29B1BAFC09F00116A4C /* ImageDownloaderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloaderService.m; sourceTree = "<group>"; };
+		CF4FA29F1BAFE16300116A4C /* NetworkUpdateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUpdateProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 				CF4FA2381BAED23F00116A4C /* AppDelegate.m */,
 				CF4FA2901BAF59EF00116A4C /* Constants.h */,
 				CF4FA2911BAF59EF00116A4C /* Constants.m */,
+				CF4FA29F1BAFE16300116A4C /* NetworkUpdateProtocol.h */,
 				CF4FA29E1BAFCAC500116A4C /* Repositories */,
 				CF4FA2841BAF002000116A4C /* ViewControllers */,
 				CF4FA27D1BAEFDC400116A4C /* Model */,
