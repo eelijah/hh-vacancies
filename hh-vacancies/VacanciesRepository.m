@@ -9,6 +9,7 @@
 #import "VacanciesRepository.h"
 #import "Vacancy.h"
 #import "Constants.h"
+#import "ServiceLayer.h"
 
 @interface VacanciesRepository ()
 @property (nonatomic, strong) NSMutableArray *vacancies;
@@ -36,7 +37,7 @@
 - (void)saveParsedVacancies:(NSMutableArray *)array
 {
     [self.vacancies addObjectsFromArray:array];
-    [[NSNotificationCenter defaultCenter] postNotificationName:HHNetworkUpdate object:nil];
+    [[ServiceLayer sharedServiceLayer] notifyNetworkUpdateListners];
 }
 
 - (Vacancy *)vacancyForIndex:(NSUInteger)index {

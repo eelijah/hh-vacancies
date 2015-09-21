@@ -10,8 +10,10 @@
 #import "TableViewDataSource.h"
 #import "Constants.h"
 #import "VacancyTableViewCell.h"
+#import "ServiceLayer.h"
+#import "NetworkUpdateProtocol.h"
 
-@interface VacanciesTableViewController ()
+@interface VacanciesTableViewController () <NetworkUpdateProtocol>
 @property (nonatomic, strong) TableViewDataSource *dataSource;
 @end
 
@@ -28,14 +30,13 @@
     
     NSString *vacancyCellIdentifier = NSStringFromClass([VacancyTableViewCell class]);
     
-//    [self.tableView registerClass:[VacancyTableViewCell class] forCellReuseIdentifier:vacancyCellIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:vacancyCellIdentifier bundle:nil] forCellReuseIdentifier:vacancyCellIdentifier];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkUpdate) name:HHNetworkUpdate object:nil];
+    [[ServiceLayer sharedServiceLayer] addNetworkUpdateListner:self];
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[ServiceLayer sharedServiceLayer] removeNetworkUpdateListner:self];
 }
 
 - (void)networkUpdate {
