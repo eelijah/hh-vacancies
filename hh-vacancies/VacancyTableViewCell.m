@@ -21,9 +21,6 @@
     [self.name setText:vacancy.name];
     [self.salary setText:vacancy.salary];
     [self.employerName setText:vacancy.employerName];
-    if (!vacancy.employerLogo) {
-        [self.employerLogo setImage:[UIImage imageNamed:@"100"]];
-    }
     
     return self;
 }
